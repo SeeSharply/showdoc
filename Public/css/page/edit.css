@@ -20,7 +20,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 audio, canvas, video {
     display: inline-block;
 }
-
+.form-control{
+    display:initial;
+    padding:2px 3px;
+}
 img {
     border: none;
     vertical-align: middle;
@@ -50,7 +53,7 @@ ul, ol {
 body {
     font-size: 14px;
     color: #666;
-    font-family: "Microsoft YaHei", "Î¢ÈíÑÅºÚ", Helvetica, Tahoma, STXihei, "»ªÎÄÏ¸ºÚ", STHeiti, "Helvetica Neue", Helvetica, Tahoma, "Droid Sans", "wenquanyi micro hei", FreeSans, Arimo, Arial, SimSun, "ËÎÌå", Heiti, "ºÚÌå", sans-serif; 
+    font-family: "Microsoft YaHei", "Î¢ï¿½ï¿½ï¿½Åºï¿½", Helvetica, Tahoma, STXihei, "ï¿½ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½", STHeiti, "Helvetica Neue", Helvetica, Tahoma, "Droid Sans", "wenquanyi micro hei", FreeSans, Arimo, Arial, SimSun, "ï¿½ï¿½ï¿½ï¿½", Heiti, "ï¿½ï¿½ï¿½ï¿½", sans-serif; 
     background: #fff;
     text-align: center;
 }
@@ -113,6 +116,7 @@ body {
 
 #cat_id ,#parent_cat_id {
     width: 150px;
+    height:30px;
 }
 
 #s_number {

@@ -8,22 +8,22 @@
     <!-- 顶部条 -->
     <header class="row">
         <div class="head-left  pull-left">
-            <ul class="inline">
-                <li>
-                    <input type="text" name="page_title" id="page_title" placeholder="{$Think.Lang.input_page_title}" value="{$page.page_title}" tabindex="1">
+            <ul class="nav nav-pills">
+                <li role="presentation">
+                     <input type="text" class="form-control" name="page_title" id="page_title" placeholder="{$Think.Lang.input_page_title}" value="{$page.page_title}" tabindex="1">
                 </li>
-                <li>
-                    {$Think.Lang.level_2_directory}：
-                    <select name="cat_id" id="cat_id" tabindex="2"></select>
+                <li role="presentation">
+                     {$Think.Lang.level_2_directory}：
+                    <select class="form-control"  name="cat_id" id="cat_id" tabindex="2"></select>
                 </li>
-                <li id="li_parent_cat">
-                    {$Think.Lang.level_3_directory}：
-                    <select name="parent_cat_id" id="parent_cat_id" ></select>
+                <li role="presentation" id="li_parent_cat">
+                     {$Think.Lang.level_3_directory}：
+                    <select class="form-control" name="parent_cat_id" id="parent_cat_id" ></select>
                 </li>
-                <li>
-                    <input type="text" name="s_number" id="s_number" value="{$page.s_number}" placeholder="{$Think.Lang.s_number_explain}" title="{$Think.Lang.s_number_explain}"  tabindex="3" >
+                <li role="presentation">
+                    <input type="text" class="form-control" name="s_number" id="s_number" value="{$page.s_number}" placeholder="{$Think.Lang.s_number_explain}" title="{$Think.Lang.s_number_explain}"  tabindex="3" >
                 </li>
-                <li>
+                 <li role="presentation">
                     <!-- 首次添加没有历史版本，不显示 -->
                     <if condition="$page.page_id gt 0">
                         <a href="?s=home/page/history&page_id={$page.page_id}">{$Think.Lang.history_version}</a>
@@ -31,6 +31,7 @@
                     </if>
                 </li>
             </ul>
+           
         </div>
         <div class="head-right pull-right">
             <a href="#" class="btn btn-primary " id="save">{$Think.Lang.save}</a>
