@@ -21,7 +21,7 @@
 
       <div class="masthead">
         <div class="btn-group pull-right">
-        <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">
+        <a class="btn btn-default dropdown-toggle" style="padding:5px 25px;" data-toggle="dropdown" href="#">
         {$login_user.username}
         <span class="caret"></span>
         </a>
@@ -41,18 +41,18 @@
 
       <hr>
 
-    <div class="container-thumbnails">
-      <ul class="thumbnails">
+    <div class="container-thumbnails ">
+      <ul class="thumbnails list-group" style="list-style:none;" >
 
         <foreach name="items" item="item">
-          <li class="span3 text-center">
+          <li class="col-md-4 text-center">
             <a class="thumbnail" href="{:U('Home/Item/Show',array('item_id'=>$item['item_id']))}" title="{$item.item_description}">
               <p class="my-item">{$item.item_name}</p>
             </a>
           </li>     
         </foreach>
 
-        <li class="span3 text-center">
+        <li class="col-md-4 text-center">
           <a class="thumbnail" href="{:U('Home/Item/add')}" title="{$Think.Lang.add_an_item}添加一个新项目">
             <p class="my-item ">{$Think.Lang.new_item}&nbsp;<i class="icon-plus"></i></p>
           </a>

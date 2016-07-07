@@ -1,4 +1,4 @@
-<?php
+ <?php
 return array(
     //'配置项'=>'配置值'
     //使用sqlite数据库（ShowDoc默认）
@@ -22,8 +22,7 @@ return array(
 		':domain\s$'               => 'Home/Item/Show?item_domain=:1',//item的个性域名
         'uid/:id\d'               => 'Home/Item/showByUid?uid=:1',
     ),
+     'CloseVerify' => true,
     'URL_CASE_INSENSITIVE'=>true,
     'SHOW_ERROR_MSG'        =>  true,    // 显示错误信息，这样在部署模式下也能显示错误
-    'STATS_CODE' =>'',  //可选，统计代码
-
 );

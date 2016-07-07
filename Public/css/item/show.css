@@ -15,9 +15,10 @@
 
   .doc-head .right{
     padding-top: 15px;
-    padding-right: 40px;
+    padding-right: 60px;
   }
   .doc-left{
+    padding :10px 10px 10px 20px;
     width: 240px;
     position: relative;
     padding-top: 10px;
