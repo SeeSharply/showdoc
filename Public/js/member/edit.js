@@ -3,7 +3,7 @@ $(function(){
   var item_id = $("#item_id").val();
 
   $('#edit-cat').modal({
-    "backdrop":'static'
+    backdrop:'static'
   });
 
   getList();

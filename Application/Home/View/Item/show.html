@@ -112,7 +112,7 @@
 
 
     </div>
-    <div class="doc-right  span12 ">
+    <div class="doc-right  span12 pull-left">
       <!-- 编辑栏 -->
       <div class='page-edit-link pull-right hide'>
         <ul class="inline">
@@ -136,27 +136,34 @@
 
 <include file="Common/footer" />
 <!-- 分享项目框 -->
-<div class="modal hide fade" id="share-modal">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>{$Think.Lang.share}</h3>
+<div class="modal fade" id="share-modal">
+   <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>{$Think.Lang.share}</h3>
+      </div>
+      <div class="modal-body">
+        <p>{$Think.Lang.item_address}：<code>{$share_url}</code></p>
+        <p>{$Think.Lang.copy_address_to_your_friends}</p>
+      </div>
+    </div>
+    </div>
   </div>
-  <div class="modal-body">
-    <p>{$Think.Lang.item_address}：<code>{$share_url}</code></p>
-    <p>{$Think.Lang.copy_address_to_your_friends}</p>
-  </div>
-</div>
-
 <!-- 分享页面框 -->
 <div class="modal hide fade" id="share-page-modal">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    <h3>{$Think.Lang.share_page}</h3>
-  </div>
-  <div class="modal-body">
-    <p>{$Think.Lang.page_address}：<code id="share-page-link"></code></p>
-    <p>{$Think.Lang.copy_address_to_your_friends}</p>
-  </div>
+   <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h3>{$Think.Lang.share_page}</h3>
+      </div>
+      <div class="modal-body">
+        <p>{$Think.Lang.page_address}：<code id="share-page-link"></code></p>
+        <p>{$Think.Lang.copy_address_to_your_friends}</p>
+      </div>
+    </div>
+   </div>
 </div>
 <script src="__PUBLIC__/js/jquery.bootstrap-growl.min.js"></script>
 <script src="__PUBLIC__/js/jquery.goup.min.js"></script>

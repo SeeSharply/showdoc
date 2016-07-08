@@ -48,7 +48,7 @@ $(function(){
   //增加返回顶部按钮
   $.goup({
         trigger: 100,
-        bottomOffset: 150,
+        bottomOffset: 50,
         locationOffset: 100,
         title: lang["back_to_top"] ,
         titleAsText: true,
