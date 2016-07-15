@@ -115,12 +115,12 @@
     <div class="doc-right  span12 pull-left">
       <!-- 编辑栏 -->
       <div class='page-edit-link pull-right hide'>
-        <ul class="inline">
+        <ul class="inline pull-left btn-toolbar" >
           <if condition="$ItemPermn">
-            <li><a href="" id="share-page" title="{$Think.Lang.share_address_to_your_friends}">{$Think.Lang.share}</a></li>
-            <li><a href="" id="copy-link" title="{$Think.Lang.copy_interface_to_new}">{$Think.Lang.copy}</a></li>
-            <li><a href="" id="edit-link" title="{$Think.Lang.edit_interface}">{$Think.Lang.edit}</a></li>
-            <li><a href="" title="{$Think.Lang.delete_interface}" onclick="return confirm('{$Think.Lang.comfirm_delete}');return false;" id="delete-link">{$Think.Lang.delete}</a></li>
+            <li class="btn-group"><a href="" id="share-page" title="{$Think.Lang.share_address_to_your_friends}">{$Think.Lang.share}</a></li>
+            <li class="btn-group"><a href="" id="copy-link" title="{$Think.Lang.copy_interface_to_new}">{$Think.Lang.copy}</a></li>
+            <li class="btn-group"><a href="" id="edit-link" title="{$Think.Lang.edit_interface}">{$Think.Lang.edit}</a></li>
+            <li class="btn-group"><a href="" title="{$Think.Lang.delete_interface}" onclick="return confirm('{$Think.Lang.comfirm_delete}');return false;" id="delete-link">{$Think.Lang.delete}</a></li>
           <else />
             <li></li>
             <li></li>
@@ -151,7 +151,7 @@
     </div>
   </div>
 <!-- 分享页面框 -->
-<div class="modal hide fade" id="share-page-modal">
+<div class="modal  fade" id="share-page-modal">
    <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">

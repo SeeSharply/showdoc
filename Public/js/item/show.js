@@ -130,7 +130,7 @@ $(function(){
       var base_url = $("#base_url").val();
       var iframe_url =  base_url+"/home/page/index/page_id/"+page_id;
 
-      $(".page-edit-link").show();
+      $(".page-edit-link").toggleClass("hide");
       //$("#page-content").attr("src" , iframe_url);
       $("#edit-link").attr("href" , base_url+"/home/page/edit/page_id/"+page_id);
       $("#copy-link").attr("href" , base_url+"/home/page/edit/item_id/"+item_id+"/copy_page_id/"+page_id);

@@ -35,7 +35,7 @@ include("common.php");
         <h3 class="form-signin-heading">选择语言<br>(Choose language)</h3>
         <br>
         <div>
-	        <select id="db_type" name="lang">
+	        <select id="db_type"  class="form-control" name="lang">
 	        	<option value="zh">中文</option>
 	        	<option value="en">English</option>
 	        </select>

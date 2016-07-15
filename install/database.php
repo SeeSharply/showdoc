@@ -32,22 +32,22 @@ $cur_lang = $_REQUEST['lang'] ? $_REQUEST['lang'] :"zh";
 
     <div class="container">
 
-      <form class="form-signin" method="post">
+      <form class="form-signin form-group" method="post">
         <h3 class="form-signin-heading"><?php echo L("install_title");?></h3>
         <br>
         <div>
-	        <select id="db_type">
-	        	<option value="sqlite"><?php echo L("use_sqlite");?></option>
+	        <select id="db_type" class="form-control">
+	        	<option class="form-control" value="sqlite"><?php echo L("use_sqlite");?></option>
 	        	<option value="mysql"><?php echo L("use_mysql");?></option>
 	        </select>
         </div>
         <br>
         <div class="mysql-info" style="display:none">
-	        <input type="text" class="input-block-level"  name="db_host" id = "db_host" placeholder="<?php echo L("server_address");?>">
-	        <input type="text" class="input-block-level"  name="db_port" id = "db_port"  placeholder="<?php echo L("server_port");?>">
-	        <input type="text" class="input-block-level"  name="db_name" id = "db_name"  placeholder="<?php echo L("db_name");?>">
-	        <input type="text" class="input-block-level"  name="db_user" id = "db_user"  placeholder="<?php echo L("db_user");?>">
-	        <input type="text" class="input-block-level"  name="db_password" id = "db_password"  placeholder="<?php echo L("db_password");?>">
+	        <input type="text" class="input-block-level form-control"   name="db_host" id = "db_host" placeholder="<?php echo L("server_address");?>">
+	        <input type="text" class="input-block-level form-control" name="db_port" id = "db_port"  placeholder="<?php echo L("server_port");?>">
+	        <input type="text" class="input-block-level form-control" name="db_name" id = "db_name"  placeholder="<?php echo L("db_name");?>">
+	        <input type="text" class="input-block-level form-control" name="db_user" id = "db_user"  placeholder="<?php echo L("db_user");?>">
+	        <input type="text" class="input-block-level form-control" name="db_password" id = "db_password"  placeholder="<?php echo L("db_password");?>">
         </div>
         <div class="sqlite_tips" ><?php echo L("sqlite_tips");?></div>
         <input type="hidden" value="<?php echo $cur_lang;?>" id="lang">
