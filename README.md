@@ -74,5 +74,9 @@ ShowDoc is a tool greatly applicable for an IT team to share documents online. I
  E-mail: xing7th#gmail.com (change # into @) 
  
  All rights reserved. 
- do think it is  over?No
- Mr livemore is here to change the apidoc to boostrap3!it is so ugly with bootstrap2
+ 
+ 以上是官方的介绍
+ 
+ 以下
+ 
+ 在我第一看到这个的时候觉得挺不错的，但是由于样式有些陈旧，于是用新的bootstrap3替换了原先的bootstrap2.起到一些美化效果。
